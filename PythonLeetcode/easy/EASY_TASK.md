@@ -1,5 +1,7 @@
 # 1: Two Sum
 
+[Link to file](twosum.py)
+
 Given an array of integers `nums` and an integer `target`, return the indices of two numbers in `nums` such that they add up to the `target`.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
