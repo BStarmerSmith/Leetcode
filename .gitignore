@@ -1,0 +1,9 @@
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Compiled Java bytecode
+JavaLeetcode/bin/
+# Dependency directories (optional, adjust according to your project setup)
+JavaLeetcode/lib/
+JavaLeetcode/target/
