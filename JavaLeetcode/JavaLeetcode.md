@@ -15,7 +15,7 @@ This repository contains a Java program that removes duplicates from an array in
 4. Compile the Java code using the following command:
 
 ```
-javac -d bin src/*.java
+javac -d bin src/*.java src/easy/*.java src/medium/*.java
 ```
 
 This command compiles all the Java files in the `src` directory and places the compiled `.class` files in the `bin` directory.
@@ -50,3 +50,4 @@ Modified array: 0 1 2 3 4
 
 ## See Difficulty Breakdowns
 1. [Easy Challenges](src/easy/EASY_TASK.md)
+2. [Medium Challenges](src/medium/MEDIUM_TASK.md)
