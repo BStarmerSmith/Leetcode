@@ -44,6 +44,7 @@ public class AddTwoList {
     }
 
     public void testSolution() {
+        System.out.println("Running Tests for 2.AddTwoList");
         ListNode t1_l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
         ListNode t1_l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
         System.out.println("l1 = [2,4,3], l2 = [5,6,4] 342+465=807 output=[7,0,8]");
