@@ -9,18 +9,18 @@ public class AddTwoList {
         int l1_sum = sumOfNodes(l1_rev);
         int l2_sum = sumOfNodes(l2_rev);
         int result = l1_sum + l2_sum;
-        System.out.println(result);
         System.out.printf("\nl1_sum: %d l2_sum: %d result: %d", l1_sum, l2_sum, result);
-        int[] result_list = splitIntToArray(result);
-        ListNode final_node = new ListNode(result_list[result_list.length - 1]);
-        ListNode current = final_node;
-        for (int i = result_list.length - 2; i >= 0; i--) {
-            current.next = new ListNode(result_list[i]);
+        int[] resultArray = splitIntToArray(result);
+        ListNode resultNode = new ListNode(resultArray[0]);
+        ListNode current = resultNode;
+        for (int i = 1; i < resultArray.length; i++) {
+            current.next = new ListNode(resultArray[i]);
             current = current.next;
         }
-        ListNode final_node_rev = reverseLinkedList(final_node);
-        printListNode(final_node);
-        return final_node_rev;
+        System.out.print("\nresultNode: ");
+        ListNode resultNodeRev = reverseLinkedList(resultNode);
+        printListNode(resultNodeRev);
+        return resultNodeRev;
     }
 
     private ListNode reverseLinkedList(ListNode head) {
@@ -61,29 +61,32 @@ public class AddTwoList {
 
     public void printListNode(ListNode head) {
         ListNode current = head;
+        String number = "";
+        System.out.print("[");
         while (current != null) {
-            System.out.print(current.val + " ");
+            System.out.print(current.val);
             current = current.next;
-        }
-        System.out.println();
+        }System.out.print("]");
     }
 
     public void testSolution() {
         ListNode t1_l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
         ListNode t1_l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
-        System.out.println("Nodes 2 -> 4 -> 3 and Nodes 5 -> 6 -> 4");
+        System.out.println("l1 = [2,4,3], l2 = [5,6,4] 342+465=807 output=[7,0,8]");
         addTwoNumbers(t1_l1, t1_l2);
+        System.out.println();
 
         ListNode t2_l1 = new ListNode(0);
         ListNode t2_l2 = new ListNode(0);
-        System.out.println("Nodes 0 and Nodes 0");
+        System.out.println("l1 = [0], l2 = [0] 0+0=0 output=[0]");
         addTwoNumbers(t2_l1, t2_l2);
+        System.out.println();
 
         ListNode t3_l1 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
         ListNode t3_l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
-
-        System.out.println("l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]");
+        System.out.println("l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9] 9999999+9999=10009998 output=[8,9,9,9,0,0,0,1]");
         addTwoNumbers(t3_l1, t3_l2);
+        System.out.println();
     }
 
 }
