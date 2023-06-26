@@ -2,32 +2,14 @@ package JavaLeetcode.src.medium;
 
 public class AddTwoList {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode l1_rev = reverseLinkedList(l1);
-        printListNode(l1_rev);
-        ListNode l2_rev = reverseLinkedList(l2);
-        printListNode(l2_rev);
-        ListNode result = sumOfNodes(l1_rev, l2_rev);
-        System.out.print("\nresultNode: ");
+
+        ListNode result = sumOfNodes(l1, l2);
+        System.out.print("resultNode: ");
         printListNode(result);
         return result;
     }
 
-    private ListNode reverseLinkedList(ListNode head) {
-        ListNode prev = null;
-        ListNode current = head;
-
-        while (current != null) {
-            ListNode next = current.next;
-            current.next = prev;
-            prev = current;
-            current = next;
-        }
-
-        return prev;
-    }
-
     private ListNode sumOfNodes(ListNode l1, ListNode l2) {
-        System.out.println("sumOfNodes");
         ListNode dummyHead = new ListNode(0);
         ListNode current = dummyHead;
         int carry = 0;
@@ -44,12 +26,8 @@ public class AddTwoList {
             }
             int digit = sum % 10;
             carry = sum / 10;
-            if (carry != 0){
-                current.next = new ListNode(carry);
-            }
             current.next = new ListNode(digit);
             current = current.next;
-            System.out.println("sum: " + sum + " digit: " + digit + " carry: " + carry);
         }
 
         return dummyHead.next;
@@ -91,4 +69,5 @@ public class AddTwoList {
         addTwoNumbers(t4_l1, t4_l2);
         System.out.println();
     }
+
 }
