@@ -7,8 +7,8 @@ javac -d bin src/*.java src/easy/*.java src/medium/*.java
 if [[ $? -eq 0 ]]; then
     echo "Compilation successful."
     
-    # Run the program
-    java -cp bin JavaLeetcode.src.Main
+    # Run the program (assertions enabled -ea) (classpath -cp)
+    java -ea -cp bin JavaLeetcode.src.Main
 else
     echo "Compilation failed. Please fix the errors before running the program."
 fi

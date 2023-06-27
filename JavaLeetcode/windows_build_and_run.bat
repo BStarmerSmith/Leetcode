@@ -8,7 +8,7 @@ if %errorlevel% equ 0 (
     echo Compilation successful.
     
     REM Run the program
-    java -cp bin JavaLeetcode.src.Main
+    java -ea -cp bin JavaLeetcode.src.Main
 ) else (
     echo Compilation failed. Please fix the errors before running the program.
 )
