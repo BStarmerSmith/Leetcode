@@ -2,6 +2,7 @@ package JavaLeetcode.src.easy;
 
 public class RemoveDuplicates {
     public void testDuplicates() {
+        System.out.println("Running Tests for 26.RemoveDuplicates");
         int[] nums1 = {1, 1, 2};
         int k1 = removeDuplicates(nums1);
         System.out.println("Number of unique elements: " + k1);
