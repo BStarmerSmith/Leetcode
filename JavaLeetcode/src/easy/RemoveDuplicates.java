@@ -3,7 +3,7 @@ package JavaLeetcode.src.easy;
 public class RemoveDuplicates {
     public void testDuplicates() {
         System.out.println("Running Tests for 26.RemoveDuplicates");
-        int[] nums1 = {1, 1, 2};
+        int[] nums1 = { 1, 1, 2 };
         System.out.print("Original array: ");
         for (int num : nums1) {
             System.out.print(num + " ");
@@ -20,7 +20,7 @@ public class RemoveDuplicates {
         assert nums1[0] == 1;
         assert nums1[1] == 2;
 
-        int[] nums2 = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+        int[] nums2 = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
         System.out.print("Original array: ");
         for (int num : nums2) {
             System.out.print(num + " ");
@@ -40,7 +40,7 @@ public class RemoveDuplicates {
         assert nums2[3] == 3;
         assert nums2[4] == 4;
 
-        int[] nums3 = {1, 1, 1, 1, 1};
+        int[] nums3 = { 1, 1, 1, 1, 1 };
         System.out.print("Original array: ");
         for (int num : nums3) {
             System.out.print(num + " ");
@@ -56,7 +56,7 @@ public class RemoveDuplicates {
         assert k3 == 1;
         assert nums3[0] == 1;
 
-        int[] nums4 = {1, 2, 3, 4, 5};
+        int[] nums4 = { 1, 2, 3, 4, 5 };
         System.out.print("Original array: ");
         for (int num : nums4) {
             System.out.print(num + " ");
@@ -68,7 +68,7 @@ public class RemoveDuplicates {
         for (int i = 0; i < k4; i++) {
             System.out.print(nums4[i] + " ");
         }
-        System.out.println("\n------------------------------------");     
+        System.out.println("\n------------------------------------");
         assert k4 == 5;
         assert nums4[0] == 1;
         assert nums4[1] == 2;

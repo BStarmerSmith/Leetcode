@@ -4,7 +4,7 @@ public class AddTwoList {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         ListNode result = sumOfNodes(l1, l2);
-         return result;
+        return result;
     }
 
     private ListNode sumOfNodes(ListNode l1, ListNode l2) {
@@ -69,7 +69,8 @@ public class AddTwoList {
         System.out.print("Expected output: [8,9,9,9,0,0,0,1] ");
         printListNode(t3_result);
         System.out.println();
-        assertListNodeEquals(t3_result, new ListNode(8, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(0, new ListNode(0, new ListNode(0, new ListNode(1)))))))));
+        assertListNodeEquals(t3_result, new ListNode(8, new ListNode(9,
+                new ListNode(9, new ListNode(9, new ListNode(0, new ListNode(0, new ListNode(0, new ListNode(1)))))))));
 
         ListNode t4_l1 = new ListNode(2, new ListNode(4, new ListNode(9)));
         ListNode t4_l2 = new ListNode(5, new ListNode(6, new ListNode(4, new ListNode(9))));
@@ -78,7 +79,8 @@ public class AddTwoList {
         System.out.print("Expected output: [7,0,4,0,1] ");
         printListNode(t4_result);
         System.out.println();
-        assertListNodeEquals(t4_result, new ListNode(7, new ListNode(0, new ListNode(4, new ListNode(0, new ListNode(1))))));
+        assertListNodeEquals(t4_result,
+                new ListNode(7, new ListNode(0, new ListNode(4, new ListNode(0, new ListNode(1))))));
     }
 
     public void assertListNodeEquals(ListNode l1, ListNode l2) {
