@@ -49,5 +49,6 @@ Modified array: 0 1 2 3 4
 8. You have successfully built and run the Java program!
 
 ## See Difficulty Breakdowns
-1. [Easy Challenges](src/easy/EASY_TASK.md)
-2. [Medium Challenges](src/medium/MEDIUM_TASK.md)
+1. [Easy Challenges](src/easy/easy_task.md)
+2. [Medium Challenges](src/medium/medium_task.md)
+3. [Hard Challenges](src/hard/hard_task.md)
