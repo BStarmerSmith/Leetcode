@@ -89,6 +89,7 @@ public class AddTwoList {
 
         while (p1 != null && p2 != null) {
             if (p1.val != p2.val) {
+                System.out.println("TEST FAILURE: Expected: " + p1.val + " Actual: " + p2.val);
                 throw new AssertionError("ListNode values do not match");
             }
             p1 = p1.next;
