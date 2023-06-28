@@ -2,8 +2,6 @@
 
 [Link to file](longest_substring_without_repeating.py)
 
-# Longest Substring Without Repeating Characters
-
 Given a string `s`, the task is to find the length of the longest substring without any repeating characters.
 
 ## Examples
@@ -36,3 +34,29 @@ Explanation: The longest substring without repeating characters is "wke", which 
 
 - `0 <= s.length <= 5 * 10^4`
 - `s` consists of English letters, digits, symbols, and spaces.
+
+---
+
+# 5. Longest Palindromic Substring
+
+[Link to file](longest_palindromic_substring.py)
+
+Given a string `s`, return the longest palindromic substring in `s`.
+
+## Examples
+
+**Example 1:**
+
+Input: `s = "babad"`
+Output: `"bab"`
+Explanation: `"aba"` is also a valid answer.
+
+**Example 2:**
+
+Input: `s = "cbbd"`
+Output: `"bb"`
+
+## Constraints
+
+- 1 <= `s.length` <= 1000
+- `s` consists of only digits and English letters.
